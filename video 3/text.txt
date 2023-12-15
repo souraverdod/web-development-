@@ -1,0 +1,6 @@
+two types of tag 
+  1.Self closing tag
+    1.1 Meta 
+
+  2.Pear tag
+     -> one opening(<title>) and one closing tag (</title>)
