@@ -1,0 +1,40 @@
+1. TABLES
+
+syntax 
+     <table>
+         table content 
+     </table>
+
+
+Key Elements of HTML Table
+<table>: Defines the table itself.
+<tr>: Used for table rows.
+<th>: Used for table headings.
+<td>: Used for table cells (data).         
+
+
+Table structure : 
+   <table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Harry</td>
+    <td>100</td>
+  </tr>
+</table>
+
+Rowspan: If you want a table cell to span multiple rows, you can use the rowspan attribute.
+
+<td rowspan="value">
+
+Colspan: If you want a table cell to span multiple columns, you can use the colspan attribute.
+
+<td colspan="value">
+
+
+ 2. borders of table are added by style.css 
+
+
+ REFERENCE : https://www.codewithharry.com/tutorial/html-table-captions/

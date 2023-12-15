@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image , table & list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 1.Image -->
+  <img width="670" height="400 " src="image1.png" alt="Old theme train">
+  <!--1. alt is used to display about the  picture if pic is not loaded 
+             2. if you don't want to change aspect ratio then you can only assign one at time either width or height -->
+  <br> <!--used to break the line  -->
+   <!-- 2. Table -->
+  <table>
+    <caption> TABLE </caption>
+  <thead>
+      <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Degree</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Sourav</td>
+      <!-- sourav will take space of two columns  -->
+      <td rowspan="2">20</td>
+      <!-- 20 will take space of two rows  -->
+      <td>Engineering </td>
+    </tr>
+    
+    <tr>
+      <td>Vishal</td>
+      <td>15</td>
+      <td>Schooling</td>
+    </tbody>
+    <tfoot>
+      <td colspan ='4'>footer grouping</td>
+      
+    </tfoot>
+    </tr>
+    <tr>
+  </table>
+
+  </table>
+  <br>
+  <!-- 3. Lists -->
+  <!-- <ul> mean unordered list -->
+  <!--  <ol> mean ordered list -->
+  <caption> LISTS </caption>
+  <ul type ='circle'>
+   <li>Tanvi</li>
+   <li>Sourav</li>
+   <li>Rishi</li>
+   <li>Shubham</li>
+   <li>Vishal</li>
+  </ul>
+ 
+ <ol type ="A">
+   <li>Tanvi</li>
+   <li>Rishi</li>
+   <li>Sourav</li>
+   <li>Vishal</li>
+   <li>Shubham</li>
+   <!-- ordered list simply mean
+     [for(1,2,3,4...) use type="1"] , 
+     [for(A,B,C,D...) use type="A"], 
+     [for(a,b,c,d...) use type="a"]      
+   -->
+ </ol>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
