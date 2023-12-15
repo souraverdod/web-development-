@@ -1,0 +1,11 @@
+in line css means you can style any piece of line 
+like any <h1 style = "background-color: blue" >
+     any <p  style = "color: yellow" >
+     
+
+1. for changing lines 
+ 1.1 you can use 
+      <p>  
+          </p>    
+ 1.2 you can use list to change the line 
+     which ofcourse is a thing to use in future             
