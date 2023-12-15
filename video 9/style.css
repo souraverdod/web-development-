@@ -1,0 +1,13 @@
+.class6{
+    background-color: yellow;
+    color: mediumblue;
+}
+
+#secondDiv{
+    background-color: rgb(43, 226, 64);
+}
+/* this mean we can target css in element by class or id 
+   but if the class is repeated then it will reflect to the elements 
+   where class is used 
+   but id is unique and it will only target where it is assigned in element
+    */

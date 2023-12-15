@@ -1,0 +1,13 @@
+we target class in css using   
+format: 
+       .className {
+
+
+       }
+
+we target id in css using   
+format: 
+       #elementName {
+
+
+       }
