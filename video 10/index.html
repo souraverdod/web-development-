@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video handling</title>
+</head>
+<body>
+    <h1>how to handle a video , audio , svg and iframes  </h1>
+
+
+<!-- VIDEO -->
+    <video src="video.mp4" width="200px" controls  poster="pussy.jpg"  >Memes</video>
+
+
+<!-- AUDIO -->
+    <audio src="sachin.mp3" controls   >Lappu sa sachin hai </audio>
+      <!--there are two ways to show svg file    -->
+      
+
+<!-- SVG -->
+     <!--
+      a. will be using direct svg here is an example and also   video , audio and svg all are inline -->
+     <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="5" fill="red" />
+     </svg>
+     <!-- 
+      b.and there is second way to show svg file is create a svg file folder and link it to the html code by using <img> tag 
+      NOTE:  the only problem is that you need to add 
+      xlms namespace declaration in svg saved folder 
+      i.e ( xmlns="http://www.w3.org/2000/svg" )-->
+      <img src="image.svg" alt="Here is svg image ">
+
+
+<!--IFRAMES -->
+    <iframe src="https://www.codewithharry.com/tutorial/html-iframes/" width="866" height="346"></iframe>
+    
+    <!-- iframes used to embed other websites in a very compact form into your website layout and you can change the dimensions of the embedded website  -->
+    <!-- you can also embed the yt video in your website as fo to yt>share>embed>copy and use as a link in your iframe for eg -->
+    <iframe width="200" height="315" src="https://www.youtube.com/embed/A4JVEoi6pfY?si=ZeKcovPK-rrgg5ZF&amp;start=87" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         
+ </body>
+</html>      
