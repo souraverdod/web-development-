@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors </title>
+    <style>
+ /* 1.  Element Selector */
+        div {
+            background-color: blanchedalmond;
+            /* this is common background for every div for unique color of div you have to assign unique id or class to the div  */
+        }
+
+
+ /* 2. Class Selector */
+         .First {
+            background-color: red;
+            /* for specific div to be change color you need to define the class to the specific div as first div has class"First"" */
+         }
+
+
+/* 3. ID Selector */
+         #THIRD_DIV{
+            background-color: rgb(99, 172, 111);
+         }
+
+
+/* 4. Child Selector */
+
+     /* 4.1 path directory is direct  */
+         div > p{
+            color: brown;
+            background-color: yellow;
+         }
+
+     /* 4.1 path directory is indirect  */
+         div > article > p {
+            color:red;
+            background-color: skyblue;
+            /* note: your path should be correct to trace the para tag  */
+         }
+
+/* 5. Decendant Selector : no matter what is the directory it should contain para   */
+       div span {
+        color:orange ;
+       }
+
+/* 6. Universal Selector   */
+    *{
+        margin:0;
+        padding:0;
+        /* it decreased space between divs  */
+    }
+
+  a:visited {
+    color: rgb(0, 255, 119);
+    background-color: black;
+  }
+
+  a:link{ /* unvisited websites */
+     color:rgb(15, 0, 14);
+  }
+
+  a:active{/* link will be colored while clicking  */
+      color: red;
+  }
+  a:hover{
+    background-color: magenta;
+  }
+  /* wherever p is second child background color is aqua  */
+  p:second-child{ 
+    background-color:aqua ;
+  }
+    </style>
+</head>
+<body>
+
+    <div class="First">
+        this is first div
+    </div>
+
+
+    <div>
+       This is second div 
+    </div>
+
+
+    <div id="THIRD_DIV">
+        this is third div
+    </div>
+
+
+    <div>
+      <p>
+        this is inside the para only
+      </p>
+    </div>
+
+
+    <div>
+     <article>
+        <p>
+            This is the para inside the article within div 
+        </p>
+     </article>
+    </div>
+
+    <div>
+        <article>
+            <span>
+                 I could use para (p) but I need to make a difference for future overlapping of lines of codes so i used span  
+            </span>
+        </article>
+    </div>
+    <div>
+        <a href="https://www.instagram.com/">Go to instagram</a>
+    </div>
+</body>
+</html>
