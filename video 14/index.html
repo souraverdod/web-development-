@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Box MOdel : margin , padding and borders</title>
+    <style>
+     *{
+        /* in css we use px after dimension 
+        but in html we do not need to write px */
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        margin: 0px;
+        background-color: skyblue;
+        /* margin doesn't affect by the color of the background i.e doesn't include in the width or length of the Box Mod */
+     }   
+     
+
+     .box{
+        background-color: rgb(109, 140, 140);
+       
+     }
+     .box1{
+        color: red;
+        padding: 10px;
+        margin: 12px;
+        border: 9px solid blue;
+        height: 100px; /*here height means 100 px is the size of content only but if   you (box-sizing: border-box;) did  this line it  gives command to css that the height is included with padding and borders*/
+        /* box-sizing: border-box;  */
+        
+     }
+     .box2{
+        color: darkblue;
+        padding:12px;
+        background-color: yellow;
+        border: 5px solid black; 
+        height: 50px; 
+     }
+     .box3{
+         background-color: grey;
+         color: aqua; 
+         padding: 20px; 
+         height: 30px; 
+         margin: 10px; 
+
+     }
+     
+    </style>
+</head>
+<body>
+   <div class="box box1">
+    this is box number 1 
+   </div>
+   <div class="box box2">
+    this is box number 2
+   </div>
+   <div class="box box3">
+    this is box number 3 
+   </div>
+</body>
+</html>
