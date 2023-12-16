@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font, text and color properties in css</title>
+    
+    <style>
+        
+     /* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;700&display=swap'); */
+     @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;700&family=Poppins:wght@200&display=swap');
+        h1{
+            font-family: 'Poppins';
+            font-size: 20px;
+            color: magenta;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        p{
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            /* font-style: italic;
+            font-weight: 1000;
+            text-decoration: underline;
+            text-decoration: overline; */
+            font-family: 'Baloo Bhaijaan 2', sans-serif; /*most commonly used and very famous worldwide */ 
+            font-size: 10px;
+            line-height: 3; /* spacing between the lines 
+            to know defaulted height I will go to the browser to check the default height in computed */
+            letter-spacing: 2px; /* used to increase or decrease letter spacing  */
+        }
+             h2 {
+                color: black;
+                text-transform: capitalize; /* to capital all the first letter*/
+                /* text-transform: lowercase; */
+                text-decoration: underline;
+                text-underline-offset:1px;
+                text-decoration-style: dotted; /* to change patterns of underline */
+                text-decoration-color: grey; /* color to the underline of the text*/
+                text-decoration-thickness: 4px;
+                text-indent: 89px; /* used to shift horizontally from right to left */
+            }
+            h3{
+                border: 3px solid red;
+                color: blue;
+                width: 32px;
+                text-overflow: clip;/* here text will show in full form until it hit the border line of the border box, there will be no dotted part in there */
+                text-overflow: ellipsis;/* here text will be in dotted format if it is not getting adjusted in the border box */
+                overflow: hidden;
+            }  
+            h4{ 
+                text-align: center;/* text will be align at the centre of the border line */ 
+                border: 3px solid black ;
+                width: 150px;
+                word-break: break-all /* this will break the word from where it is touches the border box*/
+              
+            }
+
+
+            
+        
+    </style>
+</head>
+<body>
+    
+  <div>
+    <h1>Fonts</h1> 
+    <p>
+        This is new style of font
+        <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ratione soluta sapiente laudantium ab, quam officiis cum fugiat.
+        <h2>
+            text decoration 
+        </h2>
+        <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio?
+        </h3>
+        <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quos. Ipsa eius itaque ipsam omnis sint amet consequatur odio sapiente, magni voluptates dolor!
+        </h4>
+    </p>
+    
+    <!--  you can also include font through link of the font in   style 
+     you can also include font through @import of the font in style
+     you can also inlcude font through font family of the font in style 
+              -->
+              
+  </div>
+  
+  
+</body>
+</html>
