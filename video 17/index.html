@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascading  </title>
+    <style>
+/* The specificity of universal selector is 1 */
+        h1{
+            color: blue;
+        }
+
+
+ /* The specificity of class selector  is 10 */
+        .cpurple{
+            color: purple;
+            color: yellow!important;
+
+/* The specificity of class selector is 10 */
+
+        }
+
+/* The specificity of class selector is 10 */
+        .cred{
+            color:red ;
+        }
+        /*1. 
+            inline selector which is mentioned in element itself , similarly like we mention class or id in elements refer to h1.
+
+
+
+        [ important >>inline selector >> id selector>> class or attribute selector >>element selector( heading = para) >> universal selector (div etc.) ] 
+        
+        
+        or para as because class is more specific than heading and id is more specific than class
+          2. all classes in a class will be treated equally as last one listed in the style will get more priority as here is:
+          3. Attribute Selector which has some value assigned as 
+            data-x="a" which means a element where x have data a
+                            i.e  attribute=class in value   
+          4. !important; 
+                   is most valued than any thing else even inline selector 
+                   i.e also overwrite inline , id , class, attribute etc.
+              */
+
+
+
+/* The specificity of Attribute  selector is 10 */
+        [data-x=a]{
+            color: blue;   
+         }
+/* The specificity of compound selector is according to their value 
+     as  h.cred means 1 for h and  10 for .cred  */
+
+/* The specificity of inline style is 1000 */
+
+      /*  inline style which is mentioned in element itself , similarly like we mention class or id in elements refer to h1.*/
+           h1.first{
+            color: blue;
+           }
+        /* 
+        calculate the specificity of this line of code:
+
+           a.harryclass.rohan-class[href]:hover { color: red;
+                                                 }
+        To calculate the specificity value of the selector a.harryclass.rohan-class[href]:hover, you can break down its components:
+
+       Element selectors: a contributes 1 point.
+        Class selectors: .harryclass and .rohan-class each contributes 10 points, totaling 20 points.
+       Attribute selector: [href] contributes 10 points.
+        Pseudo-class: :hover adds another 10 points.
+        Add up all these values:
+
+        1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41.
+
+        So, the specificity value of the selector a.harryclass.rohan-class[href]:hover will be 41.  */
+
+    
+      
+    </style>
+</head>
+<body>
+    <h1  data-x="a" class="first cred cpurple corange">
+        what color exactly should  lead by the CSS
+    </h1>
+</body>
+</html>
