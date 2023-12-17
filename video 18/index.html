@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing unit </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html{
+            font-size: 12px; 
+            /* html is the root element  */
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width:878px; */
+            /* every display have different size in that case your pixels will be get blured so for everyone compatiblity use 100vw instead of pixels  (here 100 shows the percent of the area you want to choose of the view bar  ) */
+            /* width: 700px; */
+            width: 70vw;
+            margin: auto;/*used to margin equally from both sides and makes it in the centre of the line of screen*/
+             /*width:400px; */   /* this mean 100 percent of the view bar
+            width: auto; /*this will make equal margin on both sides of the box , simply it will make it in centre */
+            color: red;
+            background-color: aqua;
+            font-size: 18px ;
+            
+            
+        }
+        /* universal selector */
+        
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            
+            width: 70vw;
+            margin: 20px  auto;
+            /* here 23px is top margin and 
+                    auto is left and right margin */
+            font-size: 18px;
+             
+        }
+        .container p{
+            font-size: 2em;
+            /* whatever the value is there with the em  it will get multiply with the font-size of the parent class not the root class 
+            i.e 2*18px  font-size */
+            font-size: 2rem
+            /* this means mutiple of root elements's (html's) font size  i.e 2*12px */
+            
+        }
+            
+    </style>
+</head>
+<body>
+    <!-- you can set width(auto) also margin(auto) etc for a block element but can not for a inline element like div , article etc.  -->
+    <div class="box">
+        This is the box.
+    </div>
+    <div class="container" >
+        This is third box.
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab dolor eveniet veritatis iusto? Totam possimus obcaecati neque at ex itaque nostrum, amet debitis eveniet, explicabo omnis, temporibus magnam. Temporibus corrupti rerum iste ipsa tempora pariatur cumque sequi ut soluta quam, neque, magnam labore eligendi provident.
+        </p>
+    </div>
+    
+</body>
+</html>
