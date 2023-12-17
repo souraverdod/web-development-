@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS shadow and outline </title>
+    <style>
+        .box{
+            border: 2px solid blue;
+            padding: 3px;
+            margin: 23px;
+            /* USE STYLE IN INSPECT AND HOVER THE CHANGES IN THE CHROME BROWSER AND LEARN MORE BY CHANGING THE VALUES IN REAL TIME  */
+            box-shadow:  2px 5px 3px 2px rgb(184, 21, 21);
+            /* box-shadow: x-offset y-offset blur spread color  */
+            
+           
+
+        }
+        span{
+            text-shadow: 3px 4px 5px blue;
+            /* text-shadow: x-offset y-offset blur color; */
+            outline: 3px solid black;
+            outline-offset: 2px;
+            /* outline-offset is used to adjust the gap of border and outline  */
+            border: 2px solid blue;
+            border-radius: 23px;
+            /* border can change shape but can't be increased or decreased as per your css desire and outline will follow borders radius   */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a box 
+    </div>
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quaerat debitis, quae repudiandae voluptatum, asperiores dolore esse temporibus tempora illum facilis cumque officiis.
+    </span>
+</body>
+</html>
