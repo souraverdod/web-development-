@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position property </title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 0px;
+
+        }
+
+
+        .box {
+            border: 2px solid black;
+            width: 40vw;
+            height: 10vh;
+
+
+        }
+
+        .box1 {
+            background-color: lightcoral;
+            position: sticky;
+            /* act as position: static  - until you scroll about it , it will act like static and after you cross it over it will get sticked to the top of the page   */
+            top: 0px;
+            width: 60vw;
+        }
+
+        .box2 {
+            background-color: skyblue;
+
+            position: static;
+            /* by default*/
+            position: relative;
+            /* you can move your box anywhere you want */
+            top: 300px;
+            /*shifted from top*/
+            left: 0px;
+            /* shifted -29px from left  */
+            z-index: -1;
+            /* -1 means shift towards inside of the screen */
+
+
+        }
+
+        .box3 {
+            background-color: magenta;
+            position: fixed;
+            /* used to fix the position of the any element, no effect of the scrolling on the web page , this will be fixed */
+            top: 245px;
+            left: 188px;
+
+        }
+
+        .box4 {
+            background-color: lightyellow;
+            position: absolute;
+            top: 120px;
+            /*it will take position inherited from its neartest parent
+            -- his nearest parent which has positioned is itself as class ="box " if at zero px it has some space it is all due to the padding assigned with the parent box if there is no padding in the parent div/nearest positioned div 
+            then it will get in contact with the parent for  top: 0px; or left: 0px or bottom: 0px;   */
+            right: 0px;
+        }
+
+        .parent {
+            border: 3px solid black;
+            margin: 17px;
+            padding: 0px;
+            /* all the matter is of padding */
+            position: absolute;
+            /*if i did it commit then nearest positioned parent will be html itself. and box1 will be shifted to top of the html with 1px gapping  */
+            width: 80vw;
+            height: 1000px;
+            /* EXECTION --
+                  TRANSFORM , FILTER OR PERSPECTIVE PROPERTIES CAN ALSO CHANGE THE ELEMENT APPEAR AS POSITIONED
+                   THEY MIGHT HAVE DIFFERENT WORKS OTHER THAN POSITIONED < Fixed , sticky ...etc> but it do make the parent class a positioned element 
+                   */
+            /* transform:transform -- you will get to know in further videos  ; 
+            perspective: 0em;
+            filter: blur(); */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- 
+    NOTE 
+       position absolute , sticky , fixed , relatives defines them the nearest parent which are positioned. so the child elements or block will follow the parent not the html or grand parents ....
+
+                                    BUT
+
+    TRANSFORM , FILTER OR PERSPECTIVE PROPERTIES CAN ALSO CHANGE THE ELEMENT APPEAR AS POSITIONED 
+
+
+
+ -->
