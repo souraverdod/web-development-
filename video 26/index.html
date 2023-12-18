@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css overflow</title>
+    <style>
+        .box {
+         width: 25vw;
+         height: 30vh;
+         border: 3px solid black;
+     /* overflow: scroll; */
+         overflow: auto;
+            /* overflow: auto; - means if there is requirement of scroll bar use it else keep it as it is.  */
+         /* white-space: nowrap; */
+            /* nowrap - horizontal scroll bar  */
+            /*   text-overflow: ellipsis;  
+                        this property is used for text only and scroll bar will be inactive  
+                 text-overflow: clip; 
+                        this property is same as ellipsis only twist plot is this removes the inactivated scroll bar \
+                        */
+         /* overflow-x: hidden;
+         overflow-y: scroll; */
+               /* to understand this zoom out to full screen /////
+
+                  overflow-x: hidden;
+                            +            == overflow: hidden scroll; 
+                  overflow-y: scroll;
+                    
+               */
+         overflow: hidden scroll; 
+                /*  NOTE: to make it effective remove nowrap as it is a command to horizontal scroll  */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam, sint quos porro, neque
+        ut officia voluptatibus ipsa ea eius, quisquam iusto saepe. Numquam velit et doloremque id libero deleniti
+        recusandae quam, perferendis similique ut ad accusamus quis temporibus ullam voluptas. Totam excepturi dolore
+        veritatis.</div>
+</body>
+
+</html>
