@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>make a card</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+                                                
+        }
+        body{
+            background-color: rgb(207, 203, 203);
+        }
+        .card{
+            width: 400px; 
+            height: 90vh;
+            background-color: white;
+            border: 0px solid black;
+            border-radius: 15px;
+            margin: 20px;
+            box-shadow:  1px      2px      2px         darkgrey;
+                /*      x-axis  y-axis  upto(blur)  color of shadow */
+
+        }
+        .card img {
+            width: 370px;
+            margin: 15px;
+            border-radius: 15px;
+         
+        }
+        .but{
+            margin-left: 30px;
+            margin-bottom: 20px; /* NOTE: margin should give from top and left otherwise it will not be seen on chrome browser*/
+            
+            padding: 10px; /*padding of border of button */
+        }
+        .but button {
+            margin-top: -10px;/* this is used to decrease distance between border of button and image */
+            padding: 1px 8px; /*1px(top and bottom) & 8px(left and right)*/
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;/* used to add pointer to the cursor*/
+
+        }
+        .but button:hover{
+            background-color: white;
+            color: rgb(161, 18, 18);/*no space should between button:hover */
+        }
+        h2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 20px;
+        }
+        p{
+            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .read{
+            background-color: white;
+            color: purple;
+            /* text-align: center; */
+            margin: 20px 120px;
+            
+            
+        }
+        .read button{
+            padding: 8px 16px;
+            border-radius: 10px;
+            background-color: lightblue;
+            border: 0px solid black ;/*0px used to transparent the border */
+            color: purple;
+            cursor: pointer;/* necessary for the cursor change to hand cursor */
+
+        }
+        .read  button:hover{
+            color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+       
+          <img width="120px" src="https://img.freepik.com/premium-photo/young-guy-with-camera-his-hands-is-sitting-ground-looking-wonderful-mountain-landscape-smiling-there-are-many-rocky-hills-around_161422-4765.jpg" alt="image">
+        <!-- PROBLEM FACED ::: firstly I used span instead of div for class="but" but i got a problem in doing that as I am giving margin or padding it was accpeted by live preview in vscode but couldn't see any effect of any value of margin and padding in the any browser live preview  -->
+        <div class="but" > 
+            <button>nature</button>
+            <button>hills</button>
+        </div>   
+        <h2>This is the view of hills </h2>
+        <p>
+            This project was quite hard for me but after completion of this project I feel like I have done a very great job as I faced many problems while making of it. 
+             <br>But at the end I finally made it, I took help from sources but I am happy that I could finally do it. 😊😊
+        </p>
+        <div class="read"> 
+            <button>read more </button>
+        </div>
+    </div>
+</body>
+
+</html>
