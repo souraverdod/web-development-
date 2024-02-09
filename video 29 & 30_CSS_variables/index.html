@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+        /* WATCHED TILL -- 10:32 */
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        :root{
+            --color:rgb(63, 63, 212); /*if i will comment it out from here and define it in any local variable then this  will also act like a common variable for all ( -REMAINDER:: until unless a common variable is not defined in root )*/
+            --secondarycolor: rgb(124, 124, 196);
+
+            --defpad:10px;/* I want to give a padding as common for all */
+            --defop:0.5; /*denotes the opacity */
+        }
+        .navi{
+            background-color: var(--color); 
+            /* by defining var(--color) to all the divs I can change their color by using a single color varible
+            that means var is a variable and I have predefined it already   */
+        }
+         ul li {
+            list-style-type: none;
+            padding: var(--defpad); /* --defpad:10px; has applied over here */
+            opacity: 0.8; /*range (0-1)*/ 
+            opacity: var(--defop) /*also refer to the defined variable of the opacity */
+         }
+         ul{
+            display: flex; /* similar work for like inline as this makes all the elementsof div into a single line */
+         }
+         ul li:first-child{
+            background-color: var(--color); /*in activated due to local variable */
+            border: 2px solid var(--secondarycolor);/* I can also use CSS variable color for border too */
+            --color:rgb(123, 212, 63); /*now this will override the common varible as I declared a local variable */
+         }
+        .container{
+            background-color: var(--secondarycolor);
+            /* I have pre defined the value of var variable in root  */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navi">
+        <ul>
+            <li>About</li>
+            <li>Project</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatibus itaque dolor dignissimos eius odio recusandae cumque, explicabo inventore dicta. Cupiditate totam odit, necessitatibus eveniet dignissimos dolores repellat minima suscipit placeat nemo quia incidunt quam temporibus eos beatae sed minus molestias fuga vel. Maxime, nostrum.
+    </div>
+</body>
+</html>
+
+
