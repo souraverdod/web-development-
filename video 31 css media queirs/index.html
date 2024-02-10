@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queirs </title>
+    <style>
+
+        body{
+            background-color: lightgoldenrodyellow;
+            }
+         /*  @media  not/only  mediatype and (expression/condition){ body{}} */
+             @media   only       screen  and (max-width:455px)
+             {
+                body{
+                    background-color: red;
+                }
+                /* this all means at ranged width (0,344) this media will run 
+                 other than this range it runs on the body tag which is outside of the media  */
+
+                 .boxes{
+                    flex-direction: column;
+                    
+                 }
+                 
+             @media  screen and (orientation: landscape /* /portrait */) {
+                border{
+                    border: 5px solid black;
+                    /* this will only act when your width is more than height i.e landscape  */
+                }
+             }    
+             }
+              
+            .box{
+                background-color: palegreen;
+                width: 80vw;
+                height: 344px;
+                margin: 4px;
+                padding: 2px;
+                /*I tried to give width , height to the each box using .boxes instead of .box 
+                   how dumb act was that lol 🤣🤣...*/
+            }
+            
+            .boxes{
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+                    
+                    
+                    }
+    </style>
+</head>
+<body>
+    <!-- Media queires are used to adapt the code to the windows and mobile phone preview , it makes your website look impressive for all 
+    -desktop
+    -mobile phones 
+    -tabs 
+    -mac and all other systems   -->
+   <div>
+    Hey I can change my property with respect to the device you use. 
+    <!-- And we will use media queires for this 
+                          OR
+    Media queries are designed for responsive devices like mobile phone , tab and many more devices                     -->
+   </div>
+   <div class="boxes">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+   </div>
+        
+</body>
+</html>
