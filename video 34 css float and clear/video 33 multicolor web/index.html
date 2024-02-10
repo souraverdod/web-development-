@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolored website </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: var(--primary-color);
+
+        }
+
+        :root {
+            --primary-color: rgb(58 62 146 / 75%);
+            --secondary-color: rgb(59 93 199);
+            --text-color: white;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px;
+
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 10px;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            /*used to remove all decorations from text*/
+            color: var(--text-color);
+            font-weight: bolder;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

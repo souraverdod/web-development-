@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float and clear</title>
+    <style>
+        .cards{
+            border: 2px solid red;
+            /* display: flex; makes every element in a single line */
+            display: flow-root; /*it is used to overcome the outflow of the large of big size files out of the border to maintain them into the border itself */
+            
+        }
+        .card{
+            margin: 2px;
+            border: 2px solid black;
+        }
+        img{
+            float: left;/* float in the direction of left */
+            float: right;
+            
+        }
+        /* IF YOU WANT to clear side for a specific div(child) inside the code then you can use [clear: left/right/both; ]*/
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right; 
+            
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <!--Shortcut:  .cards>.card*3  and hit enter. This will creat a parent div with class = "cards and 3 child divs with class= "card"  -->
+    <div class="cards">
+        <img  src="https://images.unsplash.com/photo-1552872673-9b7b99711ebb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+         alt="" height="344px">
+        <div class="card">*JUST FOR KNOWLEDGE NOT USED IN MODERN WEBSITES* </div>
+        <div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum facilis deleniti deserunt necessitatibus itaque ab quo id temporibus, enim aut iste vitae. Optio amet exercitationem fugiat. Delectus accusantium vel doloribus incidunt dolore, repellendus voluptatem tempore nemo velit, sunt soluta praesentium voluptate natus animi suscipit dolorum voluptatibus. Temporibus dolores ea porro, et itaque dignissimos? Id deleniti quo nihil provident ut, consequatur minima magnam distinctio aperiam eos excepturi voluptates fugiat quaerat, itaque ratione, voluptatem cupiditate error repellendus perspiciatis voluptas? Delectus magni porro ipsam, eius neque et perferendis pariatur error ullam, consequuntur dolorem esse assumenda enim veritatis quo! Aliquam esse perferendis quam, nisi facilis minus possimus quaerat qui ut voluptas deserunt, amet reprehenderit dicta? Doloremque modi, illo tempore veniam quasi blanditiis deleniti? Repudiandae possimus exercitationem tempora.</div>
+        <div class="card">Card 3</div>
+    </div>
+
+</body>
+</html>
