@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS more about selectors </title>
+    <style>
+       /* .box:first-child/* iska mtlb h, agar .box apne parent ka first child h to...  {
+            background-color: red;
+        } */
+        
+        .box:first-child:first-line{
+            color: yellow;
+            /* used for operation on a single line or letter inside of a div 
+            it is also screen adjustable for smaller width devices like phone their first line will be operated only.  */
+        }
+
+        .box:nth-child(3):first-letter{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.boxes>.box*3 -->
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet beatae similique ab doloremque quis non blanditiis aperiam maiores. Aliquam quam deleniti eius sapiente consequuntur natus quis. Aut eum pariatur maxime, dolorum velit nobis vel quae maiores temporibus, illum eligendi nesciunt, quos sapiente deleniti provident necessitatibus similique a quaerat? Magnam porro nostrum, veniam nihil pariatur itaque fugiat esse omnis eius consequatur accusantium vel unde inventore odit exercitationem. Atque similique possimus earum error. Excepturi cum placeat facilis itaque similique suscipit laudantium doloremque mollitia tempore, odit earum? Alias quas doloribus, accusantium, officia perferendis fugit consequatur dolor illo distinctio aperiam nostrum consequuntur, esse officiis tenetur tempora ipsam? Repellendus totam, officia enim eius molestias doloremque laudantium similique voluptates consequatur necessitatibus quibusdam officiis. Blanditiis assumenda error odit est? </div>
+        <div class="box">Hey I am a box </div>
+        <div class="box">Hey I am a box </div>
+    </div>
+</body>
+</html>

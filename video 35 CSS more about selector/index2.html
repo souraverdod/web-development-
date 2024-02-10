@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors </title>
+    <style>
+        /* universal selector for a class itself  */
+        *{
+            background-color: rgb(228, 230, 232);
+        }
+        .boxes *{
+            color: rgb(65, 86, 93);
+            margin: 2px;
+            border: 3px solid black;
+        }
+        
+        .boxes::before{
+            content: "this is dynamically inserted before the all childs  ";
+          /* dynamically we can insert using css 
+             like this ....
+             but this will not include in the child of the div */
+             color: rgb(57, 40, 40);
+        }
+        .boxes::after{
+            content: "this is also dynamicalliy inserted after the all childs with no no inherited properties ";
+            color: blue;
+            display: inline-block; /*  for padding and margin from top (this was my big doubt that why margin and padding is not working from top in inline css , so you have to make inline-block for applying padding and margin from top)  */
+            margin-top: 24px;
+            
+            border: 2px solid black;
+            border-radius: 5px;
+            
+        }
+        ::selection{
+            color: green;
+            background: skyblue;
+            /* this block of code will active at selection of the text/ image or anything lies under html  */
+        }
+        .box::first-letter{
+            color: red;
+            font-size: 34px;
+        }
+        input::placeholder{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey this is a box and here is its content </div>
+        <div class="box">Hey this is a box and here is its content </div>
+        <div class="box">Hey this is a box and here is its content </div>
+        <div class="box">Hey this is a box and here is its content </div>
+        <input type="text" placeholder="tell us about your opinion... ">
+    </div>
+</body>
+</html>
