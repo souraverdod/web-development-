@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .head{
+            position: sticky;
+            top: 0px;
+        /* PROBLEM I FACED : 
+                      i couldn't set the sticky nature as I was doing position:sticky; in nav instead of header 
+        */
+        }
+
+        nav {
+            background-color: rgb(161, 86, 161);
+            
+        }
+
+        ul {
+
+            padding: 20px;
+            
+        }
+
+        ul li {
+            display: inline;
+            padding: 70px;
+            
+
+        }
+
+        ul li a {
+            font-size: 29px;
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .main {
+            width: 97vw;
+            height: 80vh;
+            background-color: green;
+            /* display: inline-block; not required as I didn't made it inline  */
+            margin: 1.5vw;
+        }
+
+        .first {
+            width: 500px;
+            height: 60vh;
+            background-color: rgb(132, 80, 80);
+            display: inline-block;
+            margin: 10vh;
+            margin-left: 161px;
+            
+        }
+
+        .second {
+            width: 500px;
+            height: 60vh;
+            background-color: rgb(37, 92, 201);
+            display: inline-block;
+            margin: 10vh;
+        }
+
+        .horizontal {
+            width: 80vw;
+            height: 226px;
+            border: 3px solid white;
+            margin-left: 10vw;
+            border-radius: 92px;
+            margin-top: 50px;
+        }
+
+        aside a {
+            color: red;
+            text-decoration: none;
+        }
+
+        div h1 {
+            color: white;
+            text-align: center;
+            padding: 61px;
+            font-size: 55px;
+        }
+
+        footer {
+            width: 100vw;
+            height: 2vw;
+            background-color: white;
+            margin-top: 150px;
+            padding: 20px;
+            text-align: center;
+            font-weight: 200;
+            font-size: 30px;
+        }
+
+        .image img {
+            width: 100px;
+            position: relative;
+            bottom: 278px;
+            left: 1395px;
+            border-radius: 50%;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <nav class="head1">
+            <ul class="head2">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="first"></div>
+        <div class="second"></div>
+
+    </div>
+    <div class="horizontal">
+        <h1>Welcome to this Sigma Website Development Express</h1>
+        <div class="image">
+            <img src="https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-3.jpg" alt="image">
+        </div>
+    </div>
+    <!-- <aside>
+        <a href="/">this is me </a>
+    </aside> -->
+    <footer>This is the journey of the page </footer>
+
+</body>
+
+</html>
+
+<!-- 
+
+    Problems I faced 
+    1. I was fixing the logo it got fixed but i forgot how to do that 
+        so simply use position fixed inside the .image img{}
+    2. I couldn't make position: sticky of the nav bar as i couldn't configure where to apply the position :sticky (like header ?, ul ?, ul li ? ) 
+    3. I also couldn't configure why did the scroll bar came in account   
+ --!
