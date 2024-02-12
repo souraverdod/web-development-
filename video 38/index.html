@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            height:70vh;
+            display: flex;
+
+            flex-direction: column; 
+            flex-direction: column-reverse; 
+            flex-direction: row; 
+            /* justify content will allign according to the flex direction */
+            justify-content: end;/* horizontally end of screen */
+            justify-content: start;/* horizontally start of the screen */
+            justify-content: center; /* horizontally center*/
+            align-items: center;    /* 1.vertically center 2. used to align the content when we have content in one single line */
+            align-content: center;/* used to align the content when we have more than one line (and when we will have multiple lines ? - when there is flex-wrap is used ) */
+            flex-wrap: wrap;/*used to wrap up the divs in the container or used to make multiple lines to easily fit the content   */
+            /* there is no justify-items in flexbox */
+            /* flex-wrap: wrap-reverse;  */
+            /*used to reverse the wrap (rarely used )*/
+            flex-flow: row wrap;
+            gap: 10px; /*similar to margin but used in container instead of items */
+             row-gap: 20px; 
+             column-gap: 10px;
+                  /*OR*/
+             gap: 20px 10px   ;
+        /*   gap: row  column ; */
+        }
+        .item{
+            border: 2px solid black;
+            height: 50px;
+            width: 40px;
+            /* margin: 5px; */
+            background-color:blueviolet;
+            flex-grow: 1; /*used to indicate the space or size of the item which is set 1 for each and every item */
+        }
+        .item1{
+            flex-grow: 10; /*now this item of class item1 will take 10 space size instead of 1 */
+        }
+        .item2{
+            flex-shrink: 2;
+            /* now item2 will shrink with 2x speed or 2 times  */
+            align-self: flex-start;
+            /* this property will only act when  align-content is not in the content  */
+        }
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+        .order-4{
+            order: 4;
+        }
+    </style>
+</head> 
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2 ">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+        <div class="item order-1">17</div>
+        <div class="item">18</div>
+        <div class="item">19</div>
+        <div class="item">20</div>
+        <div class="item">21</div>
+        <div class="item">22</div>
+        <div class="item">23</div>
+        <div class="item">24</div>
+        <div class="item">25</div>
+    </div>
+</body>
+</html>
