@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css transforms</title>
+    <style>
+        body{
+            background-color: rgb(58, 42, 58);
+        }
+        .container{
+            background-color: #772424;
+            width: 440px;
+            height: 350px;
+
+        }
+        .box{
+            width: 70px;
+            height: 70px;
+            background-color: yellow;
+            border-radius: 11px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(30deg); */
+            /* transform: rotate(0.25turn); */
+            /* 0.25 equals 90deg and 1 means 360deg  */
+            /* transform: rotateX(52deg); */
+            /* transform: rotateY(52deg); */
+            /* transform: rotateX(52deg); */
+            /* transform: rotate(); */
+            /* transform: scaleX(2); */
+            /* scale means 2 times or 1.3 times in any desired side i.e x,y or z  */
+            /* transform: skewX(4deg); */
+            /* skew basically makes it a parallelogram  
+            NOTE: skew can not be done in z axis */
+            transform: translateX(100px);
+            transform: translateX(10%);  
+              /* 10% of its width in case of translateX */
+            transform: translateY(10%);  
+              /* 10% of its height in case of translateY */
+            /* NOTE: not done in z axis */
+     /* IF I WANT TO APPLY ALL TRANSLATE PROPERTY AT A TIME */
+            transform: translateX(20px) translateY(20px) skewY(12deg);
+            /* transform: translateX(-100% ); */
+            /* translateX(-100% )/translateY(-100% ) it is used to like hide the nav bar or smthg  */
+            transform-origin: 12px 12px;
+                   /* also */
+            transform-origin: 12% 12%;
+
+            /* origin transformed by 12px in x and 12px in y */
+        }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">hello</div>
+    </div>
+</body>
+</html>
