@@ -1,0 +1,168 @@
+   .logo img {
+       width: 20vw;
+
+   }
+
+   nav {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       font-family: "Segoe UI";
+   }
+
+   .right ul {
+       display: flex;
+       gap: 72px;
+
+   }
+
+   .right ul li {
+       list-style: none;
+
+   }
+
+   .right ul li span {
+       padding: 0vh 1vw;
+       /*       top-down left-right */
+   }
+
+   /*                                                               MAIN                             */
+   .first {
+       display: flex;
+       flex-direction: column;
+       /* justify-items: center; will not be used as flex direction is column and now item will move left right according to align-items */
+       align-items: center;
+       gap: 40px;
+       position: relative;
+       margin: 40px;
+       top: 56px;
+       font-family: sans-serif;
+   }
+
+   .first img {
+       width: 105px;
+       margin: 0px 5px;
+   }
+
+   .first span {
+       font-size: 46px;
+   }
+
+   .child1 {
+       font-size: 21px;
+       width: 70vw;
+       text-align: center;
+       /* text-align: center;  is used to center the left over line which gets into next line will automatically gets center  */
+
+
+
+   }
+
+   .btn {
+       margin: 10px;
+       padding: 16px;
+       background-color: rgb(57, 172, 217);
+       color: white;
+       font-family: sans-serif;
+       cursor: pointer;
+       border: 0px solid black;
+       /* OR */
+       border: none;
+
+       border-radius: 6px;
+       /* if you want to bold then use font-weight */
+       font-weight: bold;
+
+
+   }
+
+   .second {
+       width: 70vw;
+       margin: auto;
+       font-family: sans-serif;
+       padding-top: 40px;
+   }
+
+   .second div img {
+       width: 45px;
+   }
+
+   .download {
+       /* margin-left: 15vw;  no need for this because you already want this to be on left side but your class second already is on the place where you want to put your image and two spans */
+       padding-bottom: 40px;
+
+   }
+
+   .download :nth-child(2) {
+       font-size: 23px;
+       padding-left: 15px;
+
+   }
+
+   .download :nth-child(3) {
+       font-size: 15px;
+       padding-left: 9px;
+   }
+
+   .download {
+       display: flex;
+       align-items: center;
+   }
+
+   .btn-blue {
+       margin: 7px;
+       padding: 10px;
+   }
+
+   .btn-green {
+       margin: 7px;
+       padding: 10px;
+       background-color: #5cb85c;
+   }
+
+   .item {
+       margin: 10px;
+       padding: 10px;
+       background-color: #f9f9f9;
+       font-size: 17px;
+       font-weight: 500;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       text-align: center;
+
+   }
+
+   .item-lang {
+       text-align: center;
+       padding-bottom: 7px;
+       padding-top: 33px;
+       font-weight: 900;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   .english {
+       padding-bottom: 15px;
+   }
+
+   .grid {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+
+   }
+
+   @media only screen and (max-width: 755px) {
+       .second {
+           width: 70vw;
+           margin: auto;
+           font-family: sans-serif;
+           padding-top: 10px;
+           margin: auto;
+
+       }
+
+       .grid {
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 20px;
+
+       }
+   }
