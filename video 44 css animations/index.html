@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 350px;
+            border: 2px solid black;
+            background-color: aqua;
+           
+        }
+
+        .box {
+            width: 100px;
+            height: 70px;
+            border: 2px solid rgb(0, 96, 2);
+            background-color: magenta;
+            padding: 10px; 
+            text-align: center;
+            font-family:cursive;
+            font-weight: 800;
+            
+
+            /*
+            animation: AnimationKaNaam;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 10;
+            animation-direction: alternate-reverse;
+            animation-fill-mode:initial; it is used barely
+            animation-play-state:running;
+             */
+
+                            /* OR */
+
+            /* Shortcut */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+           
+            animation: AnimationKaNaam 3s ease-in-out 1s 1 alternate forwards,
+                       DusraAnimation  3s ease-in-out 1s 1 alternate forwards;
+                       /* you can apply mutliple animations with comma serparation */
+            /* forwards it will stop at the end of the animation
+               backwards will take you back to the condition when there were no animation 
+                */
+            
+        }
+
+        @keyframes AnimationKaNaam {
+            from {
+                
+                background-color: red;
+                /* transform-origin: 50px 35px; */
+                /* transform: translateX(200px) translateY(200px); */
+            }
+
+            to {
+                transform: translateX(100px) scale(1);
+                background-color: blue;
+                /* transform-origin: 50px 35px; */
+                /* transform: translateX(200px) translateY(200px); */
+                
+
+
+            }
+        }
+            /* we can create multiple animations at a time  */
+        @keyframes DusraAnimation {
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg);
+
+            }
+            50%{
+                transform: rotate(180deg);
+
+            }
+            75%{
+                transform: rotate(270deg);
+
+            }
+            100%{
+                transform: rotate(360deg);
+
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">no animation when it show pink</div>
+    </div>
+</body>
+
+</html>
